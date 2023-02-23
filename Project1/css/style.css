@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+[id] {
+  scroll-margin-top: 79px;
+}
+
+.orange-color {
+  color: rgb(255, 102, 0);
+}
+
+.navbar .container .navbar-brand {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.navbar .container .nav-link,
+.navbar .container .navbar-toggler-icon {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.home {
+  position: relative;
+  height: 60rem;
+  z-index: 0;
+  background-image: url("../img/buildings-1850129_640.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.home .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+.home .btn {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.home .welcome-text {
+  font-size: 2.2rem;
+}
+
+.aboutus .aboutus-box h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-icon {
+  font-size: 4rem;
+}
+.aboutus .accordion-button {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+.aboutus .accordion-button:not(.collapsed) {
+  color: rgb(255, 106, 22);
+  background-color: rgb(248, 248, 248);
+}
+
+.team {
+  background-color: rgb(248, 248, 248);
+}
+.team .card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card-title {
+  font-size: 2rem;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact .submit-btn {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 992px) {
+  .home {
+    background-image: url("../img/buildings-1850129_1920.jpg");
+  }
+  [id] {
+    scroll-margin-top: 69px;
+  }
+}/*# sourceMappingURL=style.css.map */
