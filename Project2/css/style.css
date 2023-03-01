@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -5;
+}
+
+.top-hero {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  z-index: 0;
+}
+
+.top-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+}
+nav .nav-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -5;
+}
+nav .container a {
+  font-size: 1.5rem;
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+}
+nav .container .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+}
+nav .container .navbar-brand .fa-solid, nav .container .navbar-brand span {
+  color: rgb(0, 47, 255);
+}
+nav .container .navbar-toggler {
+  font-size: 1.5rem;
+}
+nav .container .navbar-nav a {
+  transition: color 0.3s;
+}
+nav .container .navbar-nav a:hover {
+  color: white;
+}
+nav .container .navbar-nav .active {
+  color: white;
+}
+
+header {
+  font-size: 2rem;
+}
+header .carousel-item {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+header .carousel-img-one {
+  background-image: url("../img/main-carousel-1.jpg");
+}
+header .carousel-img-two {
+  background-image: url("../img/main-carousel-2.jpg");
+}
+header .carousel-img-three {
+  background-image: url("../img/main-carousel-3.jpg");
+}
+
+main .box-text .container i {
+  font-size: 4rem;
+}
+main .box-text .container h3 {
+  font-size: 2.6rem;
+}
+main .section-hero-img .hero-img {
+  position: relative;
+  height: 440px;
+  background-image: url("../img/car1.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+main .section-hero-img .hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px 100px;
+  z-index: 5;
+}
+main .aboutus-hero {
+  background-image: url("../img/about/about-info.jpg");
+  background-position: bottom;
+}
+main .aboutus-info {
+  background-color: rgb(248, 248, 248);
+}
+main .aboutus-info .container {
+  padding: 2em 0.5em;
+}
+main .aboutus-info .container .aboutus-text {
+  padding: 1.8em;
+}
+main .aboutus-info .container .aboutus-text h3 {
+  margin-bottom: 0.5em;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-text-decoration: underline #007bff;
+          text-decoration: underline #007bff;
+}
+main .aboutus-info .container .aboutus-text-right {
+  text-align: right;
+}
+main .aboutus-info .container .aboutus-img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.services-header {
+  position: relative;
+}
+.services-header .hero-img {
+  position: relative;
+  height: 300px;
+  background-image: url("../img/services/car.jpg");
+  background-size: cover;
+  background-position: 0 75%;
+}
+.services-header .hero-img .hero-text h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  z-index: 100;
+  font-size: 4rem;
+}
+.services-header .hero-shadow {
+  position: absolute;
+  z-index: 10;
+}
+
+.services-main .services-section-cars .container .row .hero-img-box-1 {
+  position: relative;
+  height: 300px;
+  background-image: url("../img/services/engine.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+.services-main .services-section-cars .container .row .hero-img-box-2 {
+  position: relative;
+  height: 300px;
+  background-image: url("../img/services/visual.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+.services-main .services-section-cars .container .row .hero-img-box-3 {
+  position: relative;
+  height: 300px;
+  background-image: url("../img/services/car-audio.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+.services-main .services-section-cars .container .row .hero-img-box-4 {
+  position: relative;
+  height: 300px;
+  background-image: url("../img/services/allinone.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+
+.projects-header {
+  position: relative;
+}
+.projects-header .hero-img {
+  position: relative;
+  height: 300px;
+  background-image: url("../img/projects/project-hero.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+}
+.projects-header .hero-img .hero-text h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  z-index: 100;
+  font-size: 4rem;
+}
+.projects-header .hero-shadow {
+  position: absolute;
+  z-index: 10;
+}
+
+.projects-main .container .card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects-main .container .card {
+  width: 100%;
+}
+
+.contact-header {
+  position: relative;
+}
+.contact-header .hero-img {
+  position: relative;
+  height: 250px;
+  background-image: url("../img/contact/header.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+}
+.contact-header .hero-img .hero-text h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  z-index: 100;
+  font-size: 4rem;
+}
+.contact-header .hero-shadow {
+  position: absolute;
+  z-index: 10;
+}
+
+.contact-main .contact-logo {
+  font-size: 3rem;
+}
+.contact-main .contact-forms input, .contact-main select, .contact-main textarea {
+  font-size: 1.6rem;
+}
+.contact-main .contact-forms .btn {
+  padding: 0.3em 0.8em;
+  font-size: 1.6rem;
+}
+.contact-main .contact-map iframe {
+  width: 100%;
+  min-height: 400px;
+}
+
+@media (min-width: 1400px) {
+  header .carousel-item {
+    height: 600px;
+  }
+  header .carousel-img-one {
+    background-image: url("../img/main-carousel-1-hq.jpg");
+  }
+  header .carousel-img-two {
+    background-image: url("../img/main-carousel-2-hq.jpg");
+  }
+  header .carousel-img-three {
+    background-image: url("../img/main-carousel-3-hq.jpg");
+  }
+  .services-header .hero-img {
+    background-image: url("../img/services/car-hq.jpg");
+  }
+}
+@media (min-width: 992px) {
+  .aboutus-info .container {
+    padding: 0;
+  }
+  .aboutus-info .container .aboutus-text {
+    padding: 5em 0;
+    transform: skew(-15deg);
+  }
+  .aboutus-info .container .aboutus-text-left {
+    padding-right: 2em;
+    text-align: right;
+  }
+  .aboutus-info .container .aboutus-text-right {
+    padding-left: 2em;
+    text-align: left;
+  }
+  .aboutus-info .container .aboutus-img {
+    height: auto;
+    transform: skew(-15deg);
+  }
+  .aboutus-shadow {
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  .contact-header .hero-img {
+    background-image: url("../img/contact/header-hq.jpg");
+  }
+}
+@media (min-width: 768px) {
+  main .our-passion .container .aboutus-text {
+    padding: 0 1.5em;
+    transform: skew(-15deg);
+  }
+  main .our-passion .container .title-right {
+    padding-left: 40px;
+  }
+  main .our-passion .aboutus-img {
+    transform: skew(-15deg);
+  }
+}/*# sourceMappingURL=style.css.map */
